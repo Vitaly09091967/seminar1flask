@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Internet Shop{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Internet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/category/clothing">Clothing</a></li>
+                <li><a href="/category/shoes">Shoes</a></li>
+                <li><a href="/category/jacket">Jacket</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Internet Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
